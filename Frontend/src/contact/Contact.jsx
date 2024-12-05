@@ -16,12 +16,12 @@ function Contact() {
 
       
         <div>
-        <div id="my_modal_3" className="flex h-screen items-center justify-center ">
+        <div id="my_modal_3" className="flex h-screen items-center justify-center bg-slate-50">
         <div className="border-[2px] p-7 shadow-md rounded-md dark:bg-slate-600 dark:text-white">
             <form onSubmit={handleSubmit(onSubmit)}>
       {/* if there is a button in form, it will close the modal */}
                 
-            <h3 className="font-bold text-lg">Contact Us</h3>
+            <h3 className="font-bold text-lg items-center text-center">Contact Us</h3>
             
             <div className='mt-4 space-y-1  space-x-3'>
                 {/* <span>Name</span> */}
@@ -55,7 +55,7 @@ function Contact() {
             </div>
 
             <div className='text-center mt-8 text-md'>
-                <button className='bg-blue-500 text-white rounded-md px-3 py-3 hover:bg-blue-700 duration-200'>
+                <button className='bg-teal-600 text-white rounded-md px-3 py-3 hover:bg-teal-700 duration-200'>
                     Contact Us
                 </button>
                 

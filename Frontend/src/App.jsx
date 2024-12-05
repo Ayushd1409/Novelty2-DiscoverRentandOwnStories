@@ -8,6 +8,9 @@ import { Toaster } from 'react-hot-toast';
 import { useAuth } from './context/AuthProvider'
 import About from './about/About'
 import Contact from './contact/Contact'
+import BookDescription from './components/BookDescription'
+import Buy from './components/Buy'
+
 
 function App() {
   const [authUser, setAuthUser] = useAuth();
@@ -23,6 +26,18 @@ function App() {
             path="/Books"
             element={authUser ? <Courses /> : <Navigate to="/signup" />}
           /> 
+      <Route
+            path="/BookDescription/:id"
+            element={authUser ? <BookDescription /> : <Navigate to="/signup" />}
+          /> 
+          <Route
+            path="/Buy"
+            element={authUser ? <Buy /> : <Navigate to="/signup" />}
+          /> 
+          {/* <Route
+            path="/Rent/:id"
+            element={authUser ? <Rent /> : <Navigate to="/signup" />}
+          />  */}
        <Route path="/signup" element={<SignUp/>}/>
 
       </Routes>

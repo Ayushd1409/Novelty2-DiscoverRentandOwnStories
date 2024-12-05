@@ -78,7 +78,7 @@ function Navbar() {
     
       </ul>
     </div>
-    <a className="text-2xl cursor-pointer font-bold">BookStore</a>
+    <a className="text-2xl cursor-pointer font-bold">Novelty</a>
   </div>
   <div className="navbar-end space-x-3">
   <div className="navbar-center hidden lg:flex">

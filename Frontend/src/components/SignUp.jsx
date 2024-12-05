@@ -57,7 +57,7 @@ function SignUp() {
                 />
 
                 <br />
-                {errors.fullname && <span className='text-sm text-red-500'>This field is required</span>}
+                {errors.fullname && <span className='text-sm text-teal-600'>This field is required</span>}
             </div>
 
             <div className='mt-4 space-y-2'>
@@ -67,7 +67,7 @@ function SignUp() {
                     {...register("email", { required: true })}
                 />
                 <br />
-                {errors.email && <span className='text-sm text-red-500'>This field is required</span>}
+                {errors.email && <span className='text-sm text-teal-600'>This field is required</span>}
             </div>
             
             <div className='mt-4 space-y-2'>
@@ -77,15 +77,15 @@ function SignUp() {
                     {...register("password", { required: true })}
                 />
                 <br />
-                {errors.password && <span className='text-sm text-red-500'>This field is required</span>}
+                {errors.password && <span className='text-sm text-teal-600'>This field is required</span>}
             </div>
 
             <div className='flex justify-between mt-6 text-md'>
-                <button className='bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200'>
+                <button className='bg-teal-600 text-white rounded-md px-3 py-1 hover:bg-teal-700 duration-200'>
                     SignUp
                 </button>
                 <p className='py-1'>
-                    Have an account? <Link to='/' className='cursor-pointer underline text-pink-500 hover:text-pink-700 duration-200'>Login</Link>
+                    Have an account? <Link to='/' className='cursor-pointer underline text-teal-600 hover:text-teal-700 duration-200'>Login</Link>
                 </p>
             </div>
             </form>

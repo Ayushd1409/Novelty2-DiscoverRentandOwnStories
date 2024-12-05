@@ -79,11 +79,11 @@ function Login() {
             </div>
 
             <div className='flex justify-between mt-6'>
-                <button className='bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200'>
+                <button className='bg-teal-600 text-white rounded-md px-3 py-1 hover:bg-teal-700 duration-200'>
                     Login
                 </button>
                 <p>
-                    Not Registered? <Link to='/signup' className='cursor-pointer underline text-pink-500 hover:text-pink-700 duration-200'>SignUp</Link>
+                    Not Registered? <Link to='/signup' className='cursor-pointer underline text-teal-600 hover:text-teal-700 duration-200'>SignUp</Link>
                 </p>
             </div>
             </form>
